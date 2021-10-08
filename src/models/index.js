@@ -3,6 +3,7 @@ import Sequelize from 'sequelize';
 import userModel from './user';
 import messageModel from './message';
 
+// sequelize
 let sequelize;
 if (process.env.DATABASE_URL) {
   sequelize = new Sequelize(process.env.DATABASE_URL, {
