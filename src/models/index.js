@@ -17,6 +17,10 @@ if (process.env.DATABASE_URL) {
     process.env.DATABASE_PASSWORD,
     {
       dialect: 'postgres',
+      ssl: true,
+      dialectOptions: {
+        ssl: true,
+      },
     }
   );
 }
